@@ -82,8 +82,7 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">En esta practica se desarrollaron 18 ejercicios, del curso de Arduino Básico I, para conocer y practicar circuitos esenciales con ledes, botones, resistencias, cables y una tarjeta de Arduino UNO. La placa Arduino UNO se programo en lenguaje C++.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
@@ -96,18 +95,20 @@
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
+                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question.</p>
                         <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
                         
+                        
+
                         <!-- Tarjetas -->
                             <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
                             <div class="row gx-5">
 
-                                <!-- Practica 1 -->
+                                <!-- Practica 0 -->
                                 <div class="col-lg-6 mb-5">
                                     <div class="card h-100 shadow border-0">
-                                        <img class="card-img-top" src="img/P1.gif" alt="..." />
+                                        <img class="card-img-top" src="img/P0.gif" alt="..." />
                                         <div class="card-body px-4">
                                             <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
                                             <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
@@ -148,6 +149,7 @@
                                                             <span class="color-3">(</span>
                                                             <span class="color-2">1000</span>
                                                             <span class="color-3">)</span>
+                                                            <span class="color-4"> // Wait for 1000 milliseconds</span>
                                                             <br>
                                                             <span class="color-1">digitalWrite</span>
                                                             <span class="color-3">(LED_BUILTIN, LOW);</span>
@@ -156,6 +158,7 @@
                                                             <span class="color-3">(</span>
                                                             <span class="color-2">1000</span>
                                                             <span class="color-3">)</span>
+                                                            <span class="color-4"> // Wait for 1000 milliseconds</span>
                                                             <br>
                                                         </p>
                                                         <span class="color-3">}</span>
@@ -167,6 +170,56 @@
                                 </div>
                                 
                                 
+                                <!-- Practica 1 -->
+                                <div class="col-lg-6 mb-5">
+                                    <div class="card h-100 shadow border-0">
+                                        <img class="card-img-top" src="img/P1.gif" alt="..." />
+                                        <div class="card-body px-4">
+                                            <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                            <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                            <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                            
+                                            <!--Practice code-->
+                                            <div class="code-editor">
+                                                <div class="header">
+                                                    <span class="title">C++</span>
+                                                </div>
+
+                                                <div class="editor-content">
+                                                    <code class="code">
+                                                        <p>
+                                                            <span class="color-0">void </span> 
+                                                            <span class="color-1">setup</span>
+                                                            <span class="color-3">() {</span>
+                                                        </p>
+                                            
+                                                        <p class="property">
+                                                            <span class="color-1">pinMode</span>
+                                                            <span class="color-3">(LED_BUILTIN, OUTPUT);</span>
+                                                        </p>
+                                                        
+                                                        <span class="color-3">}</span>
+
+                                                        <p>
+                                                            <span class="color-0">void </span> 
+                                                            <span class="color-1">loop</span>
+                                                            <span class="color-3">() {</span>
+                                                        </p>
+
+                                                        <p class="property">
+                                                            <span class="color-1">digitalWrite</span>
+                                                            <span class="color-3">(LED_BUILTIN, HIGH);</span>
+                                                        </p>
+                                                        
+                                                        <span class="color-3">}</span>
+                                                    </code>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                                 <!-- Practica 2 -->
                                 <div class="col-lg-6 mb-5">
                                     <div class="card h-100 shadow border-0">
@@ -205,7 +258,7 @@
 
                                                         <p class="property">
                                                             <span class="color-1">digitalWrite</span>
-                                                            <span class="color-3">(LED_BUILTIN, HIGH);</span>
+                                                            <span class="color-3">(LED_BUILTIN, LOW);</span>
                                                         </p>
                                                         
                                                         <span class="color-3">}</span>
@@ -215,7 +268,6 @@
                                         </div>
                                     </div>
                                 </div>
-
 
                                 <!-- Practica 3 -->
                                 <div class="col-lg-6 mb-5">
@@ -237,7 +289,7 @@
                                                         <p>
                                                             <span class="color-0">void </span> 
                                                             <span class="color-1">setup</span>
-                                                            <span class="color-3">() {</span>
+                                                            <span class="color-3">( ) {</span>
                                                         </p>
                                             
                                                         <p class="property">
@@ -250,14 +302,29 @@
                                                         <p>
                                                             <span class="color-0">void </span> 
                                                             <span class="color-1">loop</span>
-                                                            <span class="color-3">() {</span>
+                                                            <span class="color-3">( ) {</span>
                                                         </p>
 
                                                         <p class="property">
                                                             <span class="color-1">digitalWrite</span>
-                                                            <span class="color-3">(LED_BUILTIN, HIGH);</span>
+                                                            <span class="color-3">(LED_BUILTIN, HIGH);</span> 
+                                                            <br>
+                                                            <span class="color-1">delay</span>
+                                                            <span class="color-3">(</span>
+                                                            <span class="color-2">100</span>
+                                                            <span class="color-3">)</span>
+                                                            <span class="color-4"> // Wait for 100 milliseconds</span>
+                                                            <br>
+                                                            <span class="color-1">digitalWrite</span>
+                                                            <span class="color-3">(LED_BUILTIN, LOW);</span>
+                                                            <br>
+                                                            <span class="color-1">delay</span>
+                                                            <span class="color-3">(</span>
+                                                            <span class="color-2">100</span>
+                                                            <span class="color-3">)</span>
+                                                            <span class="color-4"> // Wait for 100 milliseconds</span>
+                                                            <br>
                                                         </p>
-                                                        
                                                         <span class="color-3">}</span>
                                                     </code>
                                                 </div>
@@ -286,12 +353,12 @@
                                                         <p>
                                                             <span class="color-0">void </span> 
                                                             <span class="color-1">setup</span>
-                                                            <span class="color-3">() {</span>
+                                                            <span class="color-3">( ) {</span>
                                                         </p>
                                             
                                                         <p class="property">
                                                             <span class="color-1">pinMode</span>
-                                                            <span class="color-3">(LED_BUILTIN, OUTPUT);</span>
+                                                            <span class="color-3">(<span class="color-2">13</span>, OUTPUT);</span>
                                                         </p>
                                                         
                                                         <span class="color-3">}</span>
@@ -299,63 +366,29 @@
                                                         <p>
                                                             <span class="color-0">void </span> 
                                                             <span class="color-1">loop</span>
-                                                            <span class="color-3">() {</span>
+                                                            <span class="color-3">( ) {</span>
                                                         </p>
 
                                                         <p class="property">
                                                             <span class="color-1">digitalWrite</span>
-                                                            <span class="color-3">(LED_BUILTIN, HIGH);</span>
-                                                        </p>
-                                                        
-                                                        <span class="color-3">}</span>
-                                                    </code>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Practica 5 -->
-                                <div class="col-lg-6 mb-5">
-                                    <div class="card h-100 shadow border-0">
-                                        <img class="card-img-top" src="img/P5.gif" alt="..." />
-                                        <div class="card-body px-4">
-                                            <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                            <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                            <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                            
-                                            <!--Practice code-->
-                                            <div class="code-editor">
-                                                <div class="header">
-                                                    <span class="title">C++</span>
-                                                </div>
-
-                                                <div class="editor-content">
-                                                    <code class="code">
-                                                        <p>
-                                                            <span class="color-0">void </span> 
-                                                            <span class="color-1">setup</span>
-                                                            <span class="color-3">() {</span>
-                                                        </p>
-                                            
-                                                        <p class="property">
-                                                            <span class="color-1">pinMode</span>
-                                                            <span class="color-3">(LED_BUILTIN, OUTPUT);</span>
-                                                        </p>
-                                                        
-                                                        <span class="color-3">}</span>
-
-                                                        <p>
-                                                            <span class="color-0">void </span> 
-                                                            <span class="color-1">loop</span>
-                                                            <span class="color-3">() {</span>
-                                                        </p>
-
-                                                        <p class="property">
+                                                            <span class="color-3">( <span class="color-2">13</span>, HIGH);</span> 
+                                                            <br>
+                                                            <span class="color-1">delay</span>
+                                                            <span class="color-3">(</span>
+                                                            <span class="color-2">1000</span>
+                                                            <span class="color-3">)</span>
+                                                            <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                            <br>
                                                             <span class="color-1">digitalWrite</span>
-                                                            <span class="color-3">(LED_BUILTIN, HIGH);</span>
+                                                            <span class="color-3">(13, LOW);</span>
+                                                            <br>
+                                                            <span class="color-1">delay</span>
+                                                            <span class="color-3">(</span>
+                                                            <span class="color-2">1000</span>
+                                                            <span class="color-3">)</span>
+                                                            <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                            <br>
                                                         </p>
-                                                        
                                                         <span class="color-3">}</span>
                                                     </code>
                                                 </div>

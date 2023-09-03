@@ -73,6 +73,7 @@
                 </div>
             </section>
 
+
             <!-- Seccion de CONTENIDO de la Práctica-->
             <section>
                 <div class="container px-5">
@@ -112,18 +113,56 @@
                                             <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
                                             <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
                                             <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                            <p class="card-text mb-0">
-                                                <pre style="background-color: aquamarine;">
-                                                    <code tyle="background-color:;">
-                                                        void setup(){
-                                                        pinMode(LED_BUILTIN, OUTPUT);
-                                                        }
-                                                        void loop(){
-                                                            digitalWrite(LED_BUILTIN, HIGH);
-                                                        }
+                                            
+                                            <!--Practice code-->
+                                            <div class="code-editor">
+                                                <div class="header">
+                                                    <span class="title">C++</span>
+                                                </div>
+
+                                                <div class="editor-content">
+                                                    <code class="code">
+                                                        <p>
+                                                            <span class="color-0">void </span> 
+                                                            <span class="color-1">setup</span>
+                                                            <span class="color-3">( ) {</span>
+                                                        </p>
+                                            
+                                                        <p class="property">
+                                                            <span class="color-1">pinMode</span>
+                                                            <span class="color-3">(LED_BUILTIN, OUTPUT);</span>
+                                                        </p>
+                                                        
+                                                        <span class="color-3">}</span>
+
+                                                        <p>
+                                                            <span class="color-0">void </span> 
+                                                            <span class="color-1">loop</span>
+                                                            <span class="color-3">( ) {</span>
+                                                        </p>
+
+                                                        <p class="property">
+                                                            <span class="color-1">digitalWrite</span>
+                                                            <span class="color-3">(LED_BUILTIN, HIGH);</span> 
+                                                            <br>
+                                                            <span class="color-1">delay</span>
+                                                            <span class="color-3">(</span>
+                                                            <span class="color-2">1000</span>
+                                                            <span class="color-3">)</span>
+                                                            <br>
+                                                            <span class="color-1">digitalWrite</span>
+                                                            <span class="color-3">(LED_BUILTIN, LOW);</span>
+                                                            <br>
+                                                            <span class="color-1">delay</span>
+                                                            <span class="color-3">(</span>
+                                                            <span class="color-2">1000</span>
+                                                            <span class="color-3">)</span>
+                                                            <br>
+                                                        </p>
+                                                        <span class="color-3">}</span>
                                                     </code>
-                                                </pre>
-                                            </p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

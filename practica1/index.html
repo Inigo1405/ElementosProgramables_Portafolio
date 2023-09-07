@@ -86,7 +86,9 @@
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
+                        <p class="fs-6 mb-4">
+                            Arduino UNO es una placa de desarrollo versátil y fácil lanzado en 2010, se basa en un microcontrolador ATmega328P de Atmel. El arduino UNO de usar que ha revolucionado la forma en que las personas pueden crear prototipos y proyectos electrónicos interactivos. Es una excelente opción para principiantes y expertos por igual que deseen explorar el mundo de la electrónica y la programación.
+                        </p>
                         
                         
                         <p id="materiales">
@@ -95,333 +97,948 @@
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
                         
-                        
-
                         <!-- Tarjetas -->
-                            <p id="simulacion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <div class="row gx-5">
+                        <div class="row gx-5">
 
-                                <!-- Practica 0 -->
-                                <div class="col-lg-6 mb-5">
-                                    <div class="card h-100 shadow border-0">
-                                        <img class="card-img-top" src="img/P0.gif" alt="..." />
-                                        <div class="card-body px-4">
-                                            <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                            <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                            <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                            
-                                            <!--Practice code-->
-                                            <div class="code-editor">
-                                                <div class="header">
-                                                    <span class="title">C++</span>
-                                                </div>
+                            <!-- Practica 0 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P0.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Ejemplo Blink</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        <!--Practice code-->
+                                        <div class="code-editor">
+                                            <div class="header">
+                                                <span class="title">C++</span>
+                                            </div>
 
-                                                <div class="editor-content">
-                                                    <code class="code">
-                                                        <p>
-                                                            <span class="color-0">void </span> 
-                                                            <span class="color-1">setup</span>
-                                                            <span class="color-3">( ) {</span>
-                                                        </p>
-                                            
-                                                        <p class="property">
-                                                            <span class="color-1">pinMode</span>
-                                                            <span class="color-3">(LED_BUILTIN, OUTPUT);</span>
-                                                        </p>
-                                                        
-                                                        <span class="color-3">}</span>
+                                            <div class="editor-content">
+                                                <code class="code">
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">setup</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+                                        
+                                                    <p class="property">
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(LED_BUILTIN, OUTPUT);</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                    <br>
+                                                    <br>
 
-                                                        <p>
-                                                            <span class="color-0">void </span> 
-                                                            <span class="color-1">loop</span>
-                                                            <span class="color-3">( ) {</span>
-                                                        </p>
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">loop</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
 
-                                                        <p class="property">
-                                                            <span class="color-1">digitalWrite</span>
-                                                            <span class="color-3">(LED_BUILTIN, HIGH);</span> 
-                                                            <br>
-                                                            <span class="color-1">delay</span>
-                                                            <span class="color-3">(</span>
-                                                            <span class="color-2">1000</span>
-                                                            <span class="color-3">)</span>
-                                                            <span class="color-4"> // Wait for 1000 milliseconds</span>
-                                                            <br>
-                                                            <span class="color-1">digitalWrite</span>
-                                                            <span class="color-3">(LED_BUILTIN, LOW);</span>
-                                                            <br>
-                                                            <span class="color-1">delay</span>
-                                                            <span class="color-3">(</span>
-                                                            <span class="color-2">1000</span>
-                                                            <span class="color-3">)</span>
-                                                            <span class="color-4"> // Wait for 1000 milliseconds</span>
-                                                            <br>
-                                                        </p>
-                                                        <span class="color-3">}</span>
-                                                    </code>
-                                                </div>
+                                                    <p class="property">
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">(LED_BUILTIN, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">(LED_BUILTIN, LOW);</span>
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <br>
+                                                    </p>
+                                                    <span class="color-3">}</span>
+                                                </code>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
-                                
-                                <!-- Practica 1 -->
-                                <div class="col-lg-6 mb-5">
-                                    <div class="card h-100 shadow border-0">
-                                        <img class="card-img-top" src="img/P1.gif" alt="..." />
-                                        <div class="card-body px-4">
-                                            <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                            <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                            <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                            
-                                            <!--Practice code-->
-                                            <div class="code-editor">
-                                                <div class="header">
-                                                    <span class="title">C++</span>
-                                                </div>
-
-                                                <div class="editor-content">
-                                                    <code class="code">
-                                                        <p>
-                                                            <span class="color-0">void </span> 
-                                                            <span class="color-1">setup</span>
-                                                            <span class="color-3">() {</span>
-                                                        </p>
-                                            
-                                                        <p class="property">
-                                                            <span class="color-1">pinMode</span>
-                                                            <span class="color-3">(LED_BUILTIN, OUTPUT);</span>
-                                                        </p>
-                                                        
-                                                        <span class="color-3">}</span>
-
-                                                        <p>
-                                                            <span class="color-0">void </span> 
-                                                            <span class="color-1">loop</span>
-                                                            <span class="color-3">() {</span>
-                                                        </p>
-
-                                                        <p class="property">
-                                                            <span class="color-1">digitalWrite</span>
-                                                            <span class="color-3">(LED_BUILTIN, HIGH);</span>
-                                                        </p>
-                                                        
-                                                        <span class="color-3">}</span>
-                                                    </code>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <!-- Practica 2 -->
-                                <div class="col-lg-6 mb-5">
-                                    <div class="card h-100 shadow border-0">
-                                        <img class="card-img-top" src="img/P2.gif" alt="..." />
-                                        <div class="card-body px-4">
-                                            <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                            <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                            <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                            
-                                            <!--Practice code-->
-                                            <div class="code-editor">
-                                                <div class="header">
-                                                    <span class="title">C++</span>
-                                                </div>
-
-                                                <div class="editor-content">
-                                                    <code class="code">
-                                                        <p>
-                                                            <span class="color-0">void </span> 
-                                                            <span class="color-1">setup</span>
-                                                            <span class="color-3">() {</span>
-                                                        </p>
-                                            
-                                                        <p class="property">
-                                                            <span class="color-1">pinMode</span>
-                                                            <span class="color-3">(LED_BUILTIN, OUTPUT);</span>
-                                                        </p>
-                                                        
-                                                        <span class="color-3">}</span>
-
-                                                        <p>
-                                                            <span class="color-0">void </span> 
-                                                            <span class="color-1">loop</span>
-                                                            <span class="color-3">() {</span>
-                                                        </p>
-
-                                                        <p class="property">
-                                                            <span class="color-1">digitalWrite</span>
-                                                            <span class="color-3">(LED_BUILTIN, LOW);</span>
-                                                        </p>
-                                                        
-                                                        <span class="color-3">}</span>
-                                                    </code>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Practica 3 -->
-                                <div class="col-lg-6 mb-5">
-                                    <div class="card h-100 shadow border-0">
-                                        <img class="card-img-top" src="img/P3.gif" alt="..." />
-                                        <div class="card-body px-4">
-                                            <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                            <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                            <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                            
-                                            <!--Practice code-->
-                                            <div class="code-editor">
-                                                <div class="header">
-                                                    <span class="title">C++</span>
-                                                </div>
-
-                                                <div class="editor-content">
-                                                    <code class="code">
-                                                        <p>
-                                                            <span class="color-0">void </span> 
-                                                            <span class="color-1">setup</span>
-                                                            <span class="color-3">( ) {</span>
-                                                        </p>
-                                            
-                                                        <p class="property">
-                                                            <span class="color-1">pinMode</span>
-                                                            <span class="color-3">(LED_BUILTIN, OUTPUT);</span>
-                                                        </p>
-                                                        
-                                                        <span class="color-3">}</span>
-
-                                                        <p>
-                                                            <span class="color-0">void </span> 
-                                                            <span class="color-1">loop</span>
-                                                            <span class="color-3">( ) {</span>
-                                                        </p>
-
-                                                        <p class="property">
-                                                            <span class="color-1">digitalWrite</span>
-                                                            <span class="color-3">(LED_BUILTIN, HIGH);</span> 
-                                                            <br>
-                                                            <span class="color-1">delay</span>
-                                                            <span class="color-3">(</span>
-                                                            <span class="color-2">100</span>
-                                                            <span class="color-3">)</span>
-                                                            <span class="color-4"> // Wait for 100 milliseconds</span>
-                                                            <br>
-                                                            <span class="color-1">digitalWrite</span>
-                                                            <span class="color-3">(LED_BUILTIN, LOW);</span>
-                                                            <br>
-                                                            <span class="color-1">delay</span>
-                                                            <span class="color-3">(</span>
-                                                            <span class="color-2">100</span>
-                                                            <span class="color-3">)</span>
-                                                            <span class="color-4"> // Wait for 100 milliseconds</span>
-                                                            <br>
-                                                        </p>
-                                                        <span class="color-3">}</span>
-                                                    </code>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Practica 4 -->
-                                <div class="col-lg-6 mb-5">
-                                    <div class="card h-100 shadow border-0">
-                                        <img class="card-img-top" src="img/P4.gif" alt="..." />
-                                        <div class="card-body px-4">
-                                            <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                            <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                            <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                            
-                                            <!--Practice code-->
-                                            <div class="code-editor">
-                                                <div class="header">
-                                                    <span class="title">C++</span>
-                                                </div>
-
-                                                <div class="editor-content">
-                                                    <code class="code">
-                                                        <p>
-                                                            <span class="color-0">void </span> 
-                                                            <span class="color-1">setup</span>
-                                                            <span class="color-3">( ) {</span>
-                                                        </p>
-                                            
-                                                        <p class="property">
-                                                            <span class="color-1">pinMode</span>
-                                                            <span class="color-3">(<span class="color-2">13</span>, OUTPUT);</span>
-                                                        </p>
-                                                        
-                                                        <span class="color-3">}</span>
-
-                                                        <p>
-                                                            <span class="color-0">void </span> 
-                                                            <span class="color-1">loop</span>
-                                                            <span class="color-3">( ) {</span>
-                                                        </p>
-
-                                                        <p class="property">
-                                                            <span class="color-1">digitalWrite</span>
-                                                            <span class="color-3">( <span class="color-2">13</span>, HIGH);</span> 
-                                                            <br>
-                                                            <span class="color-1">delay</span>
-                                                            <span class="color-3">(</span>
-                                                            <span class="color-2">1000</span>
-                                                            <span class="color-3">)</span>
-                                                            <span class="color-4"> // Wait for 1000 milliseconds</span>
-                                                            <br>
-                                                            <span class="color-1">digitalWrite</span>
-                                                            <span class="color-3">(13, LOW);</span>
-                                                            <br>
-                                                            <span class="color-1">delay</span>
-                                                            <span class="color-3">(</span>
-                                                            <span class="color-2">1000</span>
-                                                            <span class="color-3">)</span>
-                                                            <span class="color-4"> // Wait for 1000 milliseconds</span>
-                                                            <br>
-                                                        </p>
-                                                        <span class="color-3">}</span>
-                                                    </code>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                             
+                            
+                            <!-- Practica 1 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P1.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Salida Digital HIGH</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        <!--Practice code-->
+                                        <div class="code-editor">
+                                            <div class="header">
+                                                <span class="title">C++</span>
+                                            </div>
 
-                            <p id="diseño">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                                            <div class="editor-content">
+                                                <code class="code">
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">setup</span>
+                                                        <span class="color-3">() {</span>
+                                                    </p>
+                                        
+                                                    <p class="property">
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(LED_BUILTIN, OUTPUT);</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                    <br>
+                                                    <br>
+
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">loop</span>
+                                                        <span class="color-3">() {</span>
+                                                    </p>
+
+                                                    <p class="property">
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">(LED_BUILTIN, HIGH);</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Practica 2 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P2.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Salida Digital LOW</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        <!--Practice code-->
+                                        <div class="code-editor">
+                                            <div class="header">
+                                                <span class="title">C++</span>
+                                            </div>
+
+                                            <div class="editor-content">
+                                                <code class="code">
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">setup</span>
+                                                        <span class="color-3">() {</span>
+                                                    </p>
+                                        
+                                                    <p class="property">
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(LED_BUILTIN, OUTPUT);</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                    <br>
+                                                    <br>
+
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">loop</span>
+                                                        <span class="color-3">() {</span>
+                                                    </p>
+
+                                                    <p class="property">
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">(LED_BUILTIN, LOW);</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Practica 3 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P3.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Salida Digital Delay</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        <!--Practice code-->
+                                        <div class="code-editor">
+                                            <div class="header">
+                                                <span class="title">C++</span>
+                                            </div>
+
+                                            <div class="editor-content">
+                                                <code class="code">
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">setup</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+                                        
+                                                    <p class="property">
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(LED_BUILTIN, OUTPUT);</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                    <br>
+                                                    <br>
+
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">loop</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+
+                                                    <p class="property">
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">(LED_BUILTIN, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">100</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 100 milliseconds</span>
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">(LED_BUILTIN, LOW);</span>
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">100</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 100 milliseconds</span>
+                                                        <br>
+                                                    </p>
+                                                    <span class="color-3">}</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Practica 4 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P4.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Salida Digital Led</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        <!--Practice code-->
+                                        <div class="code-editor">
+                                            <div class="header">
+                                                <span class="title">C++</span>
+                                            </div>
+
+                                            <div class="editor-content">
+                                                <code class="code">
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">setup</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+                                        
+                                                    <p class="property">
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">13</span>, OUTPUT);</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                    <br>
+                                                    <br>
+
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">loop</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+
+                                                    <p class="property">
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">13</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">(13, LOW);</span>
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <br>
+                                                    </p>
+                                                    <span class="color-3">}</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Practica 5 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P5.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Salida digital protoboard I</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        <!--Practice code-->
+                                        <div class="code-editor">
+                                            <div class="header">
+                                                <span class="title">C++</span>
+                                            </div>
+
+                                            <div class="editor-content">
+                                                <code class="code">
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">setup</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+                                        
+                                                    <p class="property">
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">13</span>, OUTPUT);</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                    <br>
+                                                    <br>
+
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">loop</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+
+                                                    <p class="property">
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">13</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">(13, LOW);</span>
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <br>
+                                                    </p>
+                                                    <span class="color-3">}</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Practica 6 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P6.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Salida digital protoboard II</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        <!--Practice code-->
+                                        <div class="code-editor">
+                                            <div class="header">
+                                                <span class="title">C++</span>
+                                            </div>
+
+                                            <div class="editor-content">
+                                                <code class="code">
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">setup</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+                                        
+                                                    <p class="property">
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">13</span>, OUTPUT);</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                    <br>
+                                                    <br>
+
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">loop</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+
+                                                    <p class="property">
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">13</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">(<span class="color-2">13</span>, LOW);</span>
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <br>
+                                                    </p>
+                                                    <span class="color-3">}</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Practica 7 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P7.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Salida Digital leds I</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        <!--Practice code-->
+                                        <div class="code-editor">
+                                            <div class="header">
+                                                <span class="title">C++</span>
+                                            </div>
+
+                                            <div class="editor-content">
+                                                <code class="code">
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">setup</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+                                        
+                                                    <p class="property">
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">13</span>, OUTPUT);</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                    <br>
+                                                    <br>
+
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">loop</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+
+                                                    <p class="property">
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">13</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">13</span>, LOW);</span>
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <br>
+                                                    </p>
+                                                    <span class="color-3">}</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Practica 8 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P8.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Salida Digital leds II</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        <!--Practice code-->
+                                        <div class="code-editor">
+                                            <div class="header">
+                                                <span class="title">C++</span>
+                                            </div>
+
+                                            <div class="editor-content">
+                                                <code class="code">
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">setup</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+                                        
+                                                    <p class="property">
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">13</span>, OUTPUT);</span>
+                                                        <span class="color-3">(<span class="color-2">12</span>, OUTPUT);</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                    <br>
+                                                    <br>
+
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">loop</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+
+                                                    <p class="property">
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">13</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">(<span class="color-2">13</span>, LOW);</span>
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <br>
+
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">12</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">(<span class="color-2">12</span>, LOW);</span>
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <br>
+                                                    </p>
+                                                    <span class="color-3">}</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Practica 9 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P9.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Salida Digital display 7 segmentos</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        <!--Practice code-->
+                                        <div class="code-editor">
+                                            <div class="header">
+                                                <span class="title">C++</span>
+                                            </div>
+
+                                            <div class="editor-content">
+                                                <code class="code">
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">setup</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+                                        
+                                                    <p class="property">
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">13</span>, OUTPUT);</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                    <br>
+                                                    <br>
+
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">loop</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+
+                                                    <p class="property">
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">13</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">(<span class="color-2">13</span>, LOW);</span>
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <br>
+                                                    </p>
+                                                    <span class="color-3">}</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Practica 10 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P10.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Salida contador digital display 7 segmentos</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        <!--Practice code-->
+                                        <div class="code-editor">
+                                            <div class="header">
+                                                <span class="title">C++</span>
+                                            </div>
+
+                                            <div class="editor-content">
+                                                <code class="code">
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">setup</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+                                        
+                                                    <p class="property">
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">13</span>, OUTPUT);</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                    <br>
+                                                    <br>
+
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">loop</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+
+                                                    <p class="property">
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">13</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">(<span class="color-2">13</span>, LOW);</span>
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <br>
+                                                    </p>
+                                                    <span class="color-3">}</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Practica 11 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P11.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Entrada digital botón I</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        <!--Practice code-->
+                                        <div class="code-editor">
+                                            <div class="header">
+                                                <span class="title">C++</span>
+                                            </div>
+
+                                            <div class="editor-content">
+                                                <code class="code">
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">setup</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+                                        
+                                                    <p class="property">
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">13</span>, OUTPUT);</span>
+                                                        <span class="color-4">//LED</span>
+                                                        <br>
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">8</span>, INPUT);</span>
+                                                        <span class="color-4">//BOTON</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                    <br>
+                                                    <br>
+
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">loop</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+
+                                                    <p class="property">
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( 
+                                                            <span class="color-2">13</span>, 
+                                                            <span class="color-1">digitalRead<span class="color-3">( </span> <span class="color-2">8</span></span>));
+                                                        </span> 
+
+                                                    </p>
+                                                    <span class="color-3">}</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Practica 12 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P12.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Entrada digital botón I</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        <!--Practice code-->
+                                        <div class="code-editor">
+                                            <div class="header">
+                                                <span class="title">C++</span>
+                                            </div>
+
+                                            <div class="editor-content">
+                                                <code class="code">
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">setup</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+                                        
+                                                    <p class="property">
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">13</span>, OUTPUT);</span>
+                                                        <br>
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">8</span>, INPUT);</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                    <br>
+                                                    <br>
+
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">loop</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+
+                                                    <p class="property">
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( 
+                                                            <span class="color-2">13</span>, 
+                                                            <span class="color-1">digitalRead<span class="color-3">( </span> <span class="color-2">8</span></span>));
+                                                        </span> 
+
+                                                    </p>
+                                                    <span class="color-3">}</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Practica 13 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P13.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Entrada digital botón II</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        <!--Practice code-->
+                                        <div class="code-editor">
+                                            <div class="header">
+                                                <span class="title">C++</span>
+                                            </div>
+
+                                            <div class="editor-content">
+                                                <code class="code">
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">setup</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+                                        
+                                                    <p class="property">
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">13</span>, OUTPUT);</span>
+                                                        <br>
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">8</span>, INPUT);</span>
+                                                        <br>
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">11</span>, OUTPUT);</span>
+                                                        <br>
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">2</span>, INPUT);</span>
+                                                    </p>
+                                                    
+                                                    <span class="color-3">}</span>
+                                                    <br>
+                                                    <br>
+
+                                                    <p>
+                                                        <span class="color-0">void </span> 
+                                                        <span class="color-1">loop</span>
+                                                        <span class="color-3">( ) {</span>
+                                                    </p>
+
+                                                    <p class="property">
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( 
+                                                            <span class="color-2">13</span>, 
+                                                            <span class="color-1">digitalRead<span class="color-3">( </span> <span class="color-2">8</span></span>));
+                                                        </span> 
+
+                                                        <br>
+
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( 
+                                                            <span class="color-2">11</span>, 
+                                                            <span class="color-1">digitalRead<span class="color-3">( </span> <span class="color-2">2</span></span>));
+                                                        </span> 
+
+                                                    </p>
+                                                    <span class="color-3">}</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                            
                             
                             <p id="construccion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
+                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
                             <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
                             
 
-                        <p id="resultados">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                        <figure class="mb-4" align="center"><video width="80%"  controls>
-                            <source src="video/Robot.mp4" type="video/mp4">
-                        </video></p></figure>
+                        
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
+                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
                         <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
 
                         <p id="referencias">
@@ -439,8 +1056,8 @@
                 </div>
             </section>
 
-            
         </main>
+
 
         <!-- Footer-->
         <footer class="bg-dark py-4 mt-auto">

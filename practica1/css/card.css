@@ -32,6 +32,8 @@ body{
   
 .property {
     margin-left: 30px;
+    margin-top: -15px;
+    margin-bottom: -15px;
 }
   
 .property:hover {

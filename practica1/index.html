@@ -87,13 +87,21 @@
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
                         <p class="fs-6 mb-4">
-                            Arduino UNO es una placa de desarrollo versátil y fácil lanzado en 2010, se basa en un microcontrolador ATmega328P de Atmel. El arduino UNO de usar que ha revolucionado la forma en que las personas pueden crear prototipos y proyectos electrónicos interactivos. Es una excelente opción para principiantes y expertos por igual que deseen explorar el mundo de la electrónica y la programación.
+                            Arduino UNO es una placa de desarrollo versátil y fácil lanzado en 2010, se basa en un microcontrolador ATmega328P de Atmel. 
+                            El arduino UNO de usar que ha revolucionado la forma en que las personas pueden crear prototipos y proyectos electrónicos interactivos. Es una excelente opción para principiantes y expertos por igual que deseen explorar el mundo de la electrónica y la programación.
                         </p>
                         
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
+                        <ul>
+                            <li>Arduino UNO</li>
+                            <li>Resistencias 220</li>
+                            <li>Botones</li>
+                            <li>Cables</li>
+                            <li>Ledes</li>
+                            <li>Display de 7 segmentos</li>
+                        </ul>
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
@@ -792,6 +800,34 @@
                                                     <p class="property">
                                                         <span class="color-1">pinMode</span>
                                                         <span class="color-3">(<span class="color-2">13</span>, OUTPUT);</span>
+                                                        <br>
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">12</span>, OUTPUT);</span>
+                                                        <br>
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">11</span>, OUTPUT);</span>
+                                                        <br>
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">10</span>, OUTPUT);</span>
+                                                        <br>
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">9</span>, OUTPUT);</span>
+                                                        <br>
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">8</span>, OUTPUT);</span>
+                                                        <br>
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">7</span>, OUTPUT);</span>
+                                                        <br>
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">6</span>, OUTPUT);</span>
+                                                        <br>
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">5</span>, OUTPUT);</span>
+                                                        <br>
+                                                        <span class="color-1">pinMode</span>
+                                                        <span class="color-3">(<span class="color-2">4</span>, OUTPUT);</span>
+                                                        <br>
                                                     </p>
                                                     
                                                     <span class="color-3">}</span>
@@ -805,24 +841,122 @@
                                                     </p>
 
                                                     <p class="property">
+                                                        <span class="color-4"> // Mostramos el numero 0</span>
+                                                        <br>
                                                         <span class="color-1">digitalWrite</span>
                                                         <span class="color-3">( <span class="color-2">13</span>, HIGH);</span> 
                                                         <br>
-                                                        <span class="color-1">delay</span>
-                                                        <span class="color-3">(</span>
-                                                        <span class="color-2">1000</span>
-                                                        <span class="color-3">)</span>
-                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">12</span>, HIGH);</span> 
                                                         <br>
                                                         <span class="color-1">digitalWrite</span>
-                                                        <span class="color-3">(<span class="color-2">13</span>, LOW);</span>
+                                                        <span class="color-3">( <span class="color-2">11</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">10</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">9</span>, LOW);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">8</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">7</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">6</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">5</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">4</span>, LOW);</span> 
                                                         <br>
                                                         <span class="color-1">delay</span>
                                                         <span class="color-3">(</span>
                                                         <span class="color-2">1000</span>
                                                         <span class="color-3">)</span>
-                                                        <span class="color-4"> // Wait for 1000 milliseconds</span>
+                                                        <br><br>
+
+
+                                                        <span class="color-4"> // Mostramos el numero 1</span>
                                                         <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">13</span>, LOW);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">12</span>, LOW);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">11</span>, LOW);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">10</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">9</span>, LOW);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">8</span>, LOW);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">7</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">6</span>, LOW);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">5</span>, LOW);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">4</span>, LOW);</span> 
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <br><br>
+
+
+                                                        <span class="color-4"> // Mostramos el numero 2</span>
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">13</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">12</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">11</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">10</span>, LOW);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">9</span>, LOW);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">8</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">7</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">6</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">5</span>, LOW);</span> 
+                                                        <br>
+                                                        <span class="color-1">digitalWrite</span>
+                                                        <span class="color-3">( <span class="color-2">4</span>, HIGH);</span> 
+                                                        <br>
+                                                        <span class="color-1">delay</span>
+                                                        <span class="color-3">(</span>
+                                                        <span class="color-2">1000</span>
+                                                        <span class="color-3">)</span>
+                                                        <br><br>
+
                                                     </p>
                                                     <span class="color-3">}</span>
                                                 </code>
@@ -1028,13 +1162,11 @@
                         </div>
                             
                             
-                            <p id="construccion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p id="construccion">
+                        <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
+                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
                             
-
-                        
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
@@ -1044,14 +1176,6 @@
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
                         <p class="fs-6 mb-4">Microchip AVR® microcontroller primer: programming and interfacing, third edition (synthesis lectures on digital circuits and systems), BARRETT, Steven F. Pack Daniel J., Editorial Morgan & Claypool, 2019.</p>
-                        <p class="fs-6 mb-4">K. He, X. Zhang, S. Ren and J. Sun, "Deep Residual Learning for Image Recognition," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, USA, 2016, pp. 770-778, doi: 10.1109/CVPR.2016.90.</p>
-                        <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
-                        
-                        <p id="descargables">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Documento.pdf">documento.pdf</a> </p>
-                        <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">código.ino</a> </p>
-                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Pieza_3D.STL">pieza.stl</a> </p>
 
                 </div>
             </section>

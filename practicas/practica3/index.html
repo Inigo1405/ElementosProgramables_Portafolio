@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Práctica 3</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 3: Attiny85 Digital I/O</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/Inigo.jpg" alt="..." />
@@ -97,19 +97,144 @@
                             <li>Arduino UNO</li>
                             <li>Attiny85</li>
                             <li>Botón</li>
+                            <li>Protoboard</li>
                         </ul>
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        
-                            <p id="simulacion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ne555.png" alt="..." /></figure>
-                    
+                        <p class="fs-6 mb-4">
+                            Para ralizar esta práctica se siguieron los pasos a continuación:
+                        </p>
+
+                        <ul>
+                            <li>Instalar librería Attiny</li>
+                            <li>Arduino as ISP</li>
+                            <li>Configurar tarjeta Attiny</li>
+                            <li>Quemar bootloader</li>
+                            <li>Probar código de ejemplo</li>
+                        </ul>
+
+                        <p class="fs-6 mb-4">
+                            Esto para configurar el Arduino UNO como programador y cambiar el estado inicial del Attiny. Sin estos pasos el microcontrolador Attiny no se podría programar, por lo tanto no se realizarían los ciercuitos a continuación.
+                        </p>
+
+
+                        <!-- Tarjetas -->
+                        <div class="row gx-5">
+
+                            <!-- Practica 0 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P0.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Servo I</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>  
+
+
+                            <!-- Practica 1 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P1.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Servo II</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div> 
+
                             
+                            <!-- Practica 2 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P2.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Servos</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div> 
+
+
+                            <!-- Practica 3 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P3.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Servos invertidos</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div> 
+                                       
+                            
+                            <!-- Practica 4 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P4.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Servos independientes</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div> 
+
+
+                            <!-- Practica 5 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P5.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Servos independientes y leds</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div> 
+
+
+                            <!-- Practica 6 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="video/P5.gif" alt="..." />
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <h4 class="card-subtitle mt-2">Servo fuente</h4>
+                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        
+                                                        
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
                         <p class="fs-6 mb-4">

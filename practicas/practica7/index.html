@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Práctica 4 | Ibero Puebla</title>
+        <title>Práctica 7 | Ibero Puebla</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Práctica 4: Attiny85 Outputs</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 7: Sensores</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/Inigo.jpg" alt="..." />
@@ -61,7 +61,7 @@
                             </div>
                         <!--Aqui termina etiqueta de alumno-->
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Septiembre 13, 2023</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Octubre 25, 2023</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
                         <a class="badge bg-primary text-decoration-none link-light" >Robótica</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
@@ -80,14 +80,18 @@
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
                         <p class="fs-6 mb-4">
-                            Programación basica de salidas digitales, analogicas e inteligentes utilizando el 
-                            Attiny85 y actuadores como leds, buzzer, neopixel, motores DC, servomotores.
+                            Desarrollo de 3 categorías de sensores: Analógicos miden con señales continuas, digitales dan datos discretos, y sensores inteligentes procesan y adaptan información para aplicaciones avanzadas como inteligencia artificial e IoT.
                         </p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
                         <p class="fs-6 mb-4">
-                            If you get asteroids about a kilometer in size, those are large enough 
+                            Los sensores analógicos, digitales e inteligentes representan tres categorías distintas en función de cómo adquieren, procesan y transmiten la información del entorno. 
+                            Los sensores analógicos miden y proporcionan información en forma de señales analógicas, donde la salida es una variación continua proporcional al cambio en la magnitud medida, como la temperatura o la luz. 
+                            Los sensores digitales, en cambio, convierten la información en señales digitales, produciendo datos discretos que representan valores específicos, como los sensores de interruptores o de temperatura digital. 
+                            Por último, los sensores inteligentes integran procesamiento y capacidades de toma de decisiones en el propio dispositivo, a menudo utilizando microcontroladores o procesadores integrados para analizar la información antes de transmitirla. 
+                            Estos sensores inteligentes son capaces de adaptarse y responder a cambios en el entorno, lo que los hace ideales para aplicaciones más complejas como la inteligencia artificial, el Internet de las cosas (IoT) y sistemas de automatización avanzada. 
+                            En resumen, la distinción entre sensores analógicos, digitales e inteligentes radica en la naturaleza de la información que proporcionan y en su capacidad para procesar y adaptarse a los datos recolectados. 
                         </p>
                         
                         <p id="materiales">
@@ -95,34 +99,37 @@
                         <ul>
                             <li>Protoboard</li>
                             <li>Leds</li>
-                            <li>Led RGB</li>
-                            <li>Resistencias de 220</li>
-                            <li>Buzzer</li>
-                            <li>neopixel</li>
-                            <li>Motor DC</li>
-                            <li>Servomotor</li>
-                            <li>Attiny85</li>
+                            <li>Sensor de distancia</li>
+                            <li>Sensor de vibración</li>
+                            <li>Sensor de luz</li>
                             <li>Botón</li>
+                            <li>Potenciómetro</li>
+                            <li>Oxímetro</li>
+                            <li>Resistencias de 220</li>
+                            <li>Attiny85</li>
                         </ul>
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        
+                        <h3 class="fw-bolder2 mb-4 mt-5 fs-5">Listado de sensores</h3>
+                        <iframe src="./files/Sensores.pdf" width="100%" height="600px"></iframe>
+
+                        <h2 class="fw-bolder3 mb-4 mt-5 fs-5">Ejemplos de uso de sensores</h2>
+                        <h3 class="fw-bolder2 mb-4 mt-5 fs-5">Sensores inteligentes</h3>
                         <!-- Tarjetas -->
                         <div class="row gx-5">
-
                             <!-- Practica 0 -->
                             <div class="col-lg-6 mb-5">
                                 <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P0.gif" alt="..." />
+                                    <video controls>
+                                        <source src="video/P0.mp4" type="video/mp4">
+                                        Tu navegador no soporta el elemento de video.
+                                    </video>
                                     <div class="card-body px-4">
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Arduino UNO as ISP</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C0.png" alt="..." />
-                                        
+                                        <h4 class="card-subtitle mt-2">Oxímetro</h4>
                                     </div>
                                 </div>
                             </div>  
@@ -131,254 +138,109 @@
                             <!-- Practica 1 -->
                             <div class="col-lg-6 mb-5">
                                 <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P1.gif" alt="..." />
+                                    <video controls>
+                                        <source src="video/P1.mp4" type="video/mp4">
+                                        Tu navegador no soporta el elemento de video.
+                                    </video>
                                     <div class="card-body px-4">
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Blink</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C1.png" alt="..." />
-                                        
+                                        <h4 class="card-subtitle mt-2">Sensor de distancia</h4>
                                     </div>
                                 </div>
                             </div> 
 
-                            
-                            <!-- Practica 2 -->
+                        </div>
+
+
+                        <h3 class="fw-bolder2 mb-4 mt-5 fs-5">Sensores digitales</h3>
+                        <!-- Tarjetas -->
+                        <div class="row gx-5">
+                            <!-- Practica 0 -->
                             <div class="col-lg-6 mb-5">
                                 <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P2.gif" alt="..." />
+                                    <video controls>
+                                        <source src="video/P2.mp4" type="video/mp4">
+                                        Tu navegador no soporta el elemento de video.
+                                    </video>
                                     <div class="card-body px-4">
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital HIGH</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C2.png" alt="..." />
-                                        
-                                        
+                                        <h4 class="card-subtitle mt-2">Sensor de vibración (ky-02)</h4>
+                                    </div>
+                                </div>
+                            </div>  
+
+
+                            <!-- Practica 1 -->
+                            <div class="col-lg-6 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <video controls>
+                                        <source src="video/P3.mp4" type="video/mp4">
+                                        Tu navegador no soporta el elemento de video.
+                                    </video>
+                                    <div class="card-body px-4">
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
+                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
+                                        <h4 class="card-subtitle mt-2">Push button</h4>
                                     </div>
                                 </div>
                             </div> 
 
+                        </div>
 
-                            <!-- Practica 3 -->
+                        <h3 class="fw-bolder2 mb-4 mt-5 fs-5">Sensores analógicos</h3>
+                        <!-- Tarjetas -->
+                        <div class="row gx-5">
+                            <!-- Practica 0 -->
                             <div class="col-lg-6 mb-5">
                                 <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P3.gif" alt="..." />
+                                    <video controls>
+                                        <source src="video/P4.mp4" type="video/mp4">
+                                        Tu navegador no soporta el elemento de video.
+                                    </video>
                                     <div class="card-body px-4">
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital LOW</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C3.png" alt="..." />
-                                        
-                                        
+                                        <h4 class="card-subtitle mt-2">Sensor de luz (ky-18)</h4>
                                     </div>
                                 </div>
-                            </div> 
-                                       
-                            
-                            <!-- Practica 4 -->
+                            </div>  
+
+
+                            <!-- Practica 1 -->
                             <div class="col-lg-6 mb-5">
                                 <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P4.gif" alt="..." />
+                                    <video controls>
+                                        <source src="video/P5.mp4" type="video/mp4">
+                                        Tu navegador no soporta el elemento de video.
+                                    </video>
                                     <div class="card-body px-4">
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital Delay</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C4.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div> 
-
-
-                            <!-- Practica 5 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P5.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny 2 LEDs Delay</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C5.png" alt="..." />
-                                        
-                                        
+                                        <h4 class="card-subtitle mt-2">Potenciómetro</h4>
                                     </div>
                                 </div>
                             </div> 
 
-
-                            <!-- Practica 6 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P6.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny 3 LEDs Delay</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C6.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div> 
-
-
-                            <!-- Practica 7 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P7_8.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital Input</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C7.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div> 
-
-
-                            <!-- Practica 8 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P7_8.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital Input IF-ELSE</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C8.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div> 
-
-
-                            <!-- Practica 9 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P9.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital Input IF variables</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C9.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-
-                            <!-- Practica 10 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P10.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital Input OR</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C10.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Practica 11 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P11.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital Input AND</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C11.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Practica 12 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P12.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Contador + 3 LEDs</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C12.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Practica 13 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P13.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Contador + - 3 LEDs</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C13.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                                                
                         <p id="construccion">
                         <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
                         <p class="fs-6 mb-4">
-                            Science is an enterprise that should be cherished as an activity of the free human mind.
+                            Se utilizaron diferentes docuemntaciones en internet, algunas mostradas en el PDF de arriba, esto para poder recibir la información correcta de los sensoress utilizados en los ejemplos de uso.
                         </p>
                             
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
                         <p class="fs-6 mb-4">
-                            Science is an enterprise that should be cherished as an activity of the free human mind.
-                        </p>
-                        
-
-                        <p id="referencias">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
-                        <p class="fs-6 mb-4">
-                            Tinkercad | From mind to design in minutes: 2_Attiny85 Outputs, (Clases) Huber G., Universidad Iberoamericana Puebla, 2023.
+                            Existen gran variedad de sensores que nos permiten utilizarlos para nuestros proyectos de interes, además de que su documentación de uso lo podemos encontrar en internet.
                         </p>
                         
                 </div>

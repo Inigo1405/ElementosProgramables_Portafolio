@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Práctica 4: Attiny85 Outputs</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 5: Attiny85 Inputs</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/Inigo.jpg" alt="..." />
@@ -61,7 +61,7 @@
                             </div>
                         <!--Aqui termina etiqueta de alumno-->
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Septiembre 13, 2023</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Octubre 4, 2023</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
                         <a class="badge bg-primary text-decoration-none link-light" >Robótica</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
@@ -87,7 +87,12 @@
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
                         <p class="fs-6 mb-4">
-                            If you get asteroids about a kilometer in size, those are large enough 
+                            El ATtiny85, un microcontrolador AVR de 8 bits, maneja las entradas a través de sus pines de entrada/salida digital y algunos pines analógicos. 
+                            Los pines digitales pueden configurarse como entradas o salidas, mientras que los analógicos permiten lecturas de niveles de voltaje. 
+                            La configuración y lectura de estos pines se realiza mediante registros específicos, 
+                            y el microcontrolador ofrece opciones como resistencias pull-up/down internas para estabilizar las entradas. 
+                            Al gestionar "Attiny85 inputs", se trabaja con la asignación de funciones a pines para interactuar con sensores, 
+                            interruptores y otros dispositivos de entrada en el microcontrolador compacto.
                         </p>
                         
                         <p id="materiales">
@@ -95,12 +100,9 @@
                         <ul>
                             <li>Protoboard</li>
                             <li>Leds</li>
-                            <li>Led RGB</li>
+                            <li>Potenciómetro</li>
                             <li>Resistencias de 220</li>
-                            <li>Buzzer</li>
-                            <li>neopixel</li>
-                            <li>Motor DC</li>
-                            <li>Servomotor</li>
+                            <li>Arduino</li>
                             <li>Attiny85</li>
                             <li>Botón</li>
                         </ul>
@@ -114,12 +116,15 @@
                             <!-- Practica 0 -->
                             <div class="col-lg-6 mb-5">
                                 <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P0.gif" alt="..." />
+                                    <video controls>
+                                        <source src="video/P0.mp4" type="video/mp4">
+                                        Tu navegador no soporta el elemento de video.
+                                    </video>
                                     <div class="card-body px-4">
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Arduino UNO as ISP</h4>
+                                        <h4 class="card-subtitle mt-2">Attiny85 Sensor Digital - On/Off LED</h4>
                                         <h5 class="card-title mt-3 mb-1">Código:</h5>
                                         <img class="card-img-top" src="img/C0.png" alt="..." />
                                         
@@ -131,12 +136,17 @@
                             <!-- Practica 1 -->
                             <div class="col-lg-6 mb-5">
                                 <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P1.gif" alt="..." />
+                                    <video controls>
+                                        <source src="video/P1.mp4" type="video/mp4">
+                                        Tu navegador no soporta el elemento de video.
+                                    </video>
+                                      
+                                    <!-- <img class="card-img-top" src="video/P1.mp4" alt="..." /> -->
                                     <div class="card-body px-4">
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Blink</h4>
+                                        <h4 class="card-subtitle mt-2">Attiny85 Sensor Analogico - On/Off LED</h4>
                                         <h5 class="card-title mt-3 mb-1">Código:</h5>
                                         <img class="card-img-top" src="img/C1.png" alt="..." />
                                         
@@ -148,237 +158,41 @@
                             <!-- Practica 2 -->
                             <div class="col-lg-6 mb-5">
                                 <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P2.gif" alt="..." />
+                                    <video controls>
+                                        <source src="video/P2.mp4" type="video/mp4">
+                                        Tu navegador no soporta el elemento de video.
+                                    </video>
                                     <div class="card-body px-4">
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
                                         <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital HIGH</h4>
+                                        <h4 class="card-subtitle mt-2">Attiny85 Sensor Analogico - Delay LED</h4>
                                         <h5 class="card-title mt-3 mb-1">Código:</h5>
                                         <img class="card-img-top" src="img/C2.png" alt="..." />
-                                        
-                                        
                                     </div>
                                 </div>
                             </div> 
 
-
-                            <!-- Practica 3 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P3.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital LOW</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C3.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div> 
-                                       
-                            
-                            <!-- Practica 4 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P4.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital Delay</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C4.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div> 
-
-
-                            <!-- Practica 5 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P5.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny 2 LEDs Delay</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C5.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div> 
-
-
-                            <!-- Practica 6 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P6.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny 3 LEDs Delay</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C6.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div> 
-
-
-                            <!-- Practica 7 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P7_8.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital Input</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C7.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div> 
-
-
-                            <!-- Practica 8 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P7_8.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital Input IF-ELSE</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C8.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div> 
-
-
-                            <!-- Practica 9 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P9.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital Input IF variables</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C9.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-
-                            <!-- Practica 10 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P10.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital Input OR</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C10.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Practica 11 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P11.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Digital Input AND</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C11.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Practica 12 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P12.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Contador + 3 LEDs</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C12.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Practica 13 -->
-                            <div class="col-lg-6 mb-5">
-                                <div class="card h-100 shadow border-0">
-                                    <img class="card-img-top" src="video/P13.gif" alt="..." />
-                                    <div class="card-body px-4">
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Robótica</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Arduino UNO</div></a>
-                                        <a href="#!"><div class="badge bg-primary bg-gradient rounded-pill mb-2">Attiny85</div></a>
-                                        <h4 class="card-subtitle mt-2">Attiny Contador + - 3 LEDs</h4>
-                                        <h5 class="card-title mt-3 mb-1">Código:</h5>
-                                        <img class="card-img-top" src="img/C13.png" alt="..." />
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                                                
                         <p id="construccion">
                         <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
                         <p class="fs-6 mb-4">
-                            Science is an enterprise that should be cherished as an activity of the free human mind.
+                            Para la Construcción de todos estos ejercicios, se necesito como base el protoboard donde se encuentran todos los componentes necesarios, y el Arduino UNO para programar el Attiny85 que será el microcontrolador de estas prácticas.
                         </p>
                             
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
                         <p class="fs-6 mb-4">
-                            Science is an enterprise that should be cherished as an activity of the free human mind.
+                            Con los inputs le permite a los usuarios tener mayor interacción con los dispositivos, en algunos casos de personalizar lo que realizan como en el video 3.
                         </p>
                         
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
                         <p class="fs-6 mb-4">
-                            Tinkercad | From mind to design in minutes: 2_Attiny85 Outputs, (Clases) Huber G., Universidad Iberoamericana Puebla, 2023.
+                            Tinkercad | From mind to design in minutes: 3_Attiny85 Inputs, (Clases) Huber G., Universidad Iberoamericana Puebla, 2023.
                         </p>
                         
                 </div>
